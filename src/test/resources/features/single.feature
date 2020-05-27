@@ -1,6 +1,10 @@
 Feature: Google's Search Functionality
-
-    Scenario: Can find search results
-        When I type query as "BrowserStack"
+@smoke 
+    Scenario Outline: Can find search results
+        When I type query <query>
         And I submit
-        Then I should see title "BrowserStack - Google Search"
+        Then I should see title <title>
+        
+     Examples:
+        |query|title|
+        |"BrowserStack"|"BrowserStack - Google Search"|

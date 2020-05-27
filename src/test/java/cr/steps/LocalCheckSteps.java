@@ -1,15 +1,16 @@
-package com.browserstack.cucumber.steps;
+package cr.steps;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import cr.pages.ui.LocalPage;
+import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Steps;
 
-import java.text.ParseException;
-import com.browserstack.cucumber.pages.LocalPage;
+
 
 public class LocalCheckSteps {
-    LocalPage localPage;
+    
+	@Steps
+	LocalPage localPage;
 
     @Then("^I should see \"([^\"]*)\"$")
     public void matchTitle(String matchTitle) throws Throwable {

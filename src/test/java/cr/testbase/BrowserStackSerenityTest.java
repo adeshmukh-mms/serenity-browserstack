@@ -1,4 +1,4 @@
-package com.browserstack;
+package cr.testbase;
 
 import com.browserstack.local.Local;
 

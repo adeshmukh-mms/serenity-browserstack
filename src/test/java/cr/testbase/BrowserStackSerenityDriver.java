@@ -1,4 +1,4 @@
-package com.browserstack;
+package cr.testbase;
 
 import java.net.URL;
 import java.util.Iterator;

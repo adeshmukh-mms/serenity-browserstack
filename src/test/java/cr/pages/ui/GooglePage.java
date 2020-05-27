@@ -1,8 +1,8 @@
-package com.browserstack.cucumber.pages;
+package cr.pages.ui;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.support.FindBy;
 
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -29,5 +29,9 @@ public class GooglePage extends PageObject {
 
     public void titleShouldMatch(String matchTitle) {
         assertThat(this.getTitle()).containsIgnoringCase(matchTitle);
+    }
+    
+    public void launch (String url) {
+    	getDriver().get(url);
     }
 }
