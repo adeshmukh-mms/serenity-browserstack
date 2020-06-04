@@ -1,8 +1,5 @@
 package cr.steps;
 
-
-
-
 import cr.pages.ui.GooglePage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
